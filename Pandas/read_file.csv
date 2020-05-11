@@ -4,6 +4,6 @@ col1,col2,col3,col4,col5
 4,5,6,7,name3
 3,2,4,1,name4
 5,6,4,3,name5
-2,3,6,5,name4
+2,3,6,NaN,NaN
 7,6,4,3,name3
-2,4,1,5,name2
+NaN,4,1,5,name2
