@@ -50,7 +50,7 @@ import spacy
 nlp = spacy.blank('en')
 
 #Step 2. Create TextCategorizer
-textcat = nlp.create_pipe('textcat',config={"exclusive_classes":True,"architecture":'tfidf'})
+textcat = nlp.create_pipe('textcat',config={"exclusive_classes":True,"architecture":'tfidf'}) #for bag of words use -> bow
 
 '''
 In the above code config is given two attributes.
