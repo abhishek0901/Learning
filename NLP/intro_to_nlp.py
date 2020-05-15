@@ -51,3 +51,14 @@ but it can also make the prediction of model worse so they these are treated as 
 and tuned for data
 '''
 
+#******************************** PATTERN MATCHING********************************************
+from spacy.matcher import PhraseMatcher
+matcher = PhraseMatcher(nlp.vocab,attr = 'lower')
+
+terms = ['abhishek']
+patterns = [nlp(text) for text in terms]
+matcher.add("Termtest",None,*patterns)
+text_doc = 'abhishek is learning nlp'
+doc = nlp(text_doc)
+matches = matcher(doc)
+print(matches)
